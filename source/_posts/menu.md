@@ -1,13 +1,7 @@
 - [お知らせ](/categories/お知らせ)
-
-## コミュニティ
-
 - [新規さん向け](/categories/新規さん向け)
 - [ボット](/categories/ボット)
 - [機能](/categories/機能)
-
-## サポート
-
 - [インフラ](/categories/インフラ)
 - [運用](/categories/運用)
 

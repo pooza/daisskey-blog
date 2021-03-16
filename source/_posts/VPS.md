@@ -11,7 +11,7 @@ categories: インフラ
 - [Vultr](https://www.vultr.com/products/cloud-compute//)
 - メモリ: 2GB
 - ストレージ: SSD 55GB
-- CPU: 仮装コア×1
+- CPU: 仮想コア×1
 - OS: FreeBSD 12.2-RELEASE
 
 ### ボットサーバ
