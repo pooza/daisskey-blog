@@ -3,7 +3,6 @@
 ## コミュニティ
 
 - [新規さん向け](/categories/新規さん向け)
-- [実況](/categories/実況)
 - [ボット](/categories/ボット)
 - [機能](/categories/機能)
 
