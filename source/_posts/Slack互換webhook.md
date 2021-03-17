@@ -1,32 +1,30 @@
 ---
 title: Slack互換webhook
-date: 2020-08-10
+date: 2021-03-17
 categories: 機能
 ---
 
 ボットや自動投稿を作る方の便宜の為、webhookを提供しています。
-仕様上は、Slackの同名機能のサブセットです。簡単なSlackボットなら、既存のものを無改造でデルムリン丼対応にできるかもしれません。
+仕様上は、[Slack Incoming Webhook](https://slack.com/intl/ja-jp/help/articles/115005265063-Slack-%E3%81%A7%E3%81%AE-Incoming-Webhook-%E3%81%AE%E5%88%A9%E7%94%A8)のサブセットです。簡単なSlackボットなら、既存のものを無改造でデルムリン丼対応にできるかもしれません。
 
 ## 利用の手順
 
-[「東映アニメーション ダイ大公式」の新着情報ボット](https://mstdn.delmulin.com/@toei_bot)のAtomフィードを、[IFTTT](https://ifttt.com/)を使ってwebhookに転送する例で説明します。
+拙作の自動のRSSフィードを[IFTTT](https://ifttt.com/)を使ってwebhookに転送する例で説明します。
 
 ### RSS/Atomフィードを調べる。
 
-このボットは、以下のAtomフィードをもとにトゥートを行っています。
+以下、東映アニメーションの[プリキュア公式サイト](https://www.toei-anim.co.jp/tv/precure/)の新着情報のRSSフィードです。
+
 https://precure.b-shock.org/feed/v1.0/site/toei
 
 ### webhookのURLを調べる。
 
-[モロヘイヤHOME](https://mstdn.delmulin.com/mulukhiya)で、webhookのURLを調べられます。
-その端末でトークンの登録（アプリケーションの認証）をまだ行っていなかったら、最初に実行してください。
-スマホアプリの設定でおなじみの画面が出てきますので、指示に従ってください。
+[モロヘイヤHOME](https://mstdn.delmulin.com/mulukhiya/app/webhook)で、webhookのURLを調べられます。
+トークンの登録（アプリケーションの認証）をまだ行っていなかったら、最初に実行してください。おなじみの画面が出てきますので、指示に従ってください。
 
 トークンが登録済みなら、「環境設定」画面にwebhookのURLがあるはずです。
 
 ![手順5](手順5.png)
-
-画面にも赤字で書かれていますが、このURLは決して他人に教えてはいけません。たとえ相手が管理人であっても。
 
 ここまでで事前準備は終了。このあと実際に、[IFTTT](https://ifttt.com/)で登録を行っていきます。
 
