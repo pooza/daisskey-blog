@@ -20,7 +20,7 @@ https://precure.b-shock.org/feed/v1.0/site/toei
 ### webhookのURLを調べる。
 
 [モロヘイヤHOME](https://mstdn.delmulin.com/mulukhiya/app/webhook)で、webhookのURLを調べられます。
-トークンの登録（アプリケーションの認証）をまだ行っていなかったら、最初に実行してください。おなじみの画面が出てきますので、指示に従ってください。
+[トークンの登録](https://mstdn.delmulin.com/mulukhiya/app/token)をまだ行っていなかったら、最初に実行してください。おなじみの画面が出てきますので、指示に従ってください。
 
 トークンが登録済みなら、「環境設定」画面にwebhookのURLがあるはずです。
 

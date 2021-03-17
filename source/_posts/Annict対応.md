@@ -33,7 +33,7 @@ categories: 機能
 
 ![Annict認証コード](Annict認証.png)
 
-- モロヘイヤHOME[モロヘイヤHOME](https://mstdn.delmulin.com/mulukhiya/app/config)に戻り、認証コードを貼り付けて「認証」ボタン。
+- [モロヘイヤHOME](https://mstdn.delmulin.com/mulukhiya/app/config)に戻り、認証コードを貼り付けて「認証」ボタン。
 - 「現在の設定」にAnnict関連の設定が加わったことを確認し、設定終了。
 
 ## 技術的な詳細
