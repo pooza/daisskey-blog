@@ -3,6 +3,7 @@
 - [ボット](/categories/ボット)
 - [機能](/categories/機能)
 - [運用](/categories/運用)
+- [ご挨拶](/categories/ご挨拶)
 
 ## 関連
 
