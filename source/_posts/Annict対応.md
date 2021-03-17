@@ -1,16 +1,15 @@
 ---
 title: Annict対応
-date: 2020-08-18
+date: 2021-03-17
 categories: 機能
 ---
 
 ## 機能概要
 
 - デルムリン丼のアカウントと[Annict](https://annict.jp)のアカウントの紐づけを行えます。
-- [Annict](https://annict.jp)で、ダイ大や他のアニメの視聴記録（例えば「ヒーリングっど♥ダイ大 19話を観た」等）を行うことが出来ます。感想も書けますので、出来るだけ書くとよいと思います。
+- [Annict](https://annict.jp)で、ダイ大や他のアニメの視聴記録を行うことが出来ます。感想も書けますので、出来るだけ書くとよいと思います。
 - 数分後（最長5分）に、視聴記録のまとめがトゥートされます。
-- ~~単話だけでなく、シリーズ全体（例えば「ふたりはダイ大」）へのレビューもトゥート出来る様にしたいです。~~ 対応済み。作品へのレビューもトゥートされます。
-- 本文中に「ネタバレ」文字列を含むと、CWでトゥートされます。（8/18追記）
+- 本文中に「ネタバレ」文字列を含むと、CWでトゥートされます。
 
 ## 設定の手順
 
@@ -21,7 +20,7 @@ categories: 機能
 ### モロヘイヤHOME
 
 - [HOME](https://mstdn.delmulin.com/mulukhiya)を開く。
-- その端末で初めて[HOME](https://mstdn.delmulin.com/mulukhiya)を利用する場合は、[トークンの登録](https://mstdn.delmulin.com/mulukhiya/app/auth)（アプリケーションの認証）を最初に行うこと。
+- その端末で初めて[HOME](https://mstdn.delmulin.com/mulukhiya)を利用する場合は、[トークンの登録](https://mstdn.delmulin.com/mulukhiya/app/token)を最初に行うこと。
 
 ### 環境設定画面
 
