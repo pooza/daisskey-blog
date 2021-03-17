@@ -37,5 +37,6 @@ categories: 機能
 - 「現在の設定」にAnnict関連の設定が加わったことを確認し、設定終了。
 
 ## 技術的な詳細
+
 https://github.com/pooza/mulukhiya-toot-proxy/wiki/Annict%E5%AF%BE%E5%BF%9C
 https://annict.jp/userland/projects/60

@@ -11,13 +11,13 @@ categories: 機能
 
 拙作の自動のRSSフィードを[IFTTT](https://ifttt.com/)を使ってwebhookに転送する例で説明します。
 
-### RSS/Atomフィードを調べる。
+### RSS/Atomフィードを調べる
 
 以下、東映アニメーションの[プリキュア公式サイト](https://www.toei-anim.co.jp/tv/precure/)の新着情報のRSSフィードです。
 
 https://precure.b-shock.org/feed/v1.0/site/toei
 
-### webhookのURLを調べる。
+### webhookのURLを調べる
 
 [モロヘイヤHOME](https://mstdn.delmulin.com/mulukhiya/app/webhook)で、webhookのURLを調べられます。
 [トークンの登録](https://mstdn.delmulin.com/mulukhiya/app/token)をまだ行っていなかったら、最初に実行してください。おなじみの画面が出てきますので、指示に従ってください。
@@ -53,7 +53,7 @@ AtomフィードもRSSの一種とみなされ、登録可能です。今さら�
 URLは、先ほど調べたwebhookのURL。
 Bodyには、たとえば以下の様なJSONを。
 
-```
+```json
 {"text":"<<<{{EntryTitle}}>>>\n<<<{{EntryUrl}}>>>"}
 ```
 
