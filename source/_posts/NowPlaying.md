@@ -1,6 +1,6 @@
 ---
 title: NowPlaying
-date: 2021-03-17
+date: 2021-03-30
 categories: 機能
 ---
 
@@ -36,7 +36,7 @@ categories: 機能
 
 - iTunes Store / Apple Music 楽曲/アルバムのURL
 - YouTube Music 楽曲URL
-- Amazon Music 楽曲URL
+- ~~Amazon Music 楽曲URL~~
 - Spotify 楽曲/アルバムのURL
 
 上記は概ね、同じ再生数で権利者に貢献できる額が多い順になっています。（2020年8月現在）
