@@ -10,5 +10,5 @@
 - [デルムリン丼を探索](https://mstdn.delmulin.com/explore)
 - [利用規約](https://mstdn.delmulin.com/terms)
 - [モロヘイヤHOME](https://mstdn.delmulin.com/mulukhiya)
-- [UptimeRobot](https://uptime.delmulin.com/)
+- [UptimeRobot](https://stats.uptimerobot.com/G91rWs1KKq)
 - [運営会社](https://www.b-shock.co.jp/)
