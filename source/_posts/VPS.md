@@ -1,6 +1,6 @@
 ---
 title: VPS
-date: 2021-03-17
+date: 2021-07-17
 categories: 運用
 ---
 
@@ -14,9 +14,9 @@ categories: 運用
 - CPU: 仮想コア×1
 - OS: FreeBSD 12.2-RELEASE
 
-### ボットサーバ
+### ボットサーバ1
 
-[あくまのめだまニュース](https://mstdn.delmulin.com/@news)などを収容。
+[ハドラーブロス](https://mstdn.delmulin.com/@hadlarbot)を収容。
 他インスタンスのボットと同居してます。
 
 - [さくらのVPS](https://vps.sakura.ad.jp/)
@@ -24,3 +24,10 @@ categories: 運用
 - ストレージ: SSD 50GB
 - CPU: 2コア
 - OS: FreeBSD 12.2-RELEASE
+
+### ボットサーバ2
+
+[あくまのめだまニュース](https://mstdn.delmulin.com/@news)を収容。
+[管理人](https://mstdn.delmulin.com/@pooza)の自宅サーバです。スペック非公開。
+
+- OS: FreeBSD 13.0-RELEASE
