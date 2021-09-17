@@ -1,6 +1,6 @@
 ---
 title: VPS
-date: 2021-07-22
+date: 2021-09-18
 categories: 運用
 ---
 
@@ -35,7 +35,7 @@ categories: 運用
 
 ## ボットサーバ2
 
-[あくまのめだまニュース](https://mstdn.delmulin.com/@news)を収容。
+[あくまのめだまニュース](/articles/あくまのめだま)を収容。
 [管理人](https://mstdn.delmulin.com/@pooza)の自宅サーバです。スペック非公開。
 
 - OS: FreeBSD 13.0-RELEASE
