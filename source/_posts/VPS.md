@@ -1,10 +1,12 @@
 ---
 title: VPS
-date: 2021-09-18
+date: 2022-02-02
 categories: 運用
 ---
 
 ## Mastodonサーバ
+
+[ハドラーブロス](https://mstdn.delmulin.com/@hadlarbot)も収容。
 
 - [Vultr](https://www.vultr.com/products/cloud-compute/)
 - メモリ: 2GB
@@ -22,18 +24,7 @@ categories: 運用
 - CPU: 仮想コア×1
 - OS: FreeBSD 13.0-RELEASE
 
-## ボットサーバ1
-
-[ハドラーブロス](https://mstdn.delmulin.com/@hadlarbot)を収容。
-他インスタンスのボットと同居してます。
-
-- [さくらのVPS](https://vps.sakura.ad.jp/)
-- メモリ: 1GB
-- ストレージ: SSD 50GB
-- CPU: 2コア
-- OS: FreeBSD 12.2-RELEASE
-
-## ボットサーバ2
+## ボットサーバ
 
 [あくまのめだまニュース](/articles/あくまのめだま)を収容。
 [管理人](https://mstdn.delmulin.com/@pooza)の自宅サーバです。スペック非公開。
