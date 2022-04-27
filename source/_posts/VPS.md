@@ -1,7 +1,7 @@
 ---
 title: VPS
 date: 2022-02-02
-categories: 運用
+categories: インフラ
 ---
 
 ## Mastodonサーバ
