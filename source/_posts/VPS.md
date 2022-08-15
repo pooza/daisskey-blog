@@ -1,6 +1,6 @@
 ---
 title: VPS
-date: 2022-05-24
+date: 2022-08-16
 categories: インフラ
 ---
 
@@ -8,10 +8,10 @@ categories: インフラ
 
 [ハドラーブロス](https://mstdn.delmulin.com/@hadlarbot)も収容。
 
-- [Vultr](https://www.vultr.com/products/cloud-compute/)
+- [さくらのVPS](https://vps.sakura.ad.jp/)
 - メモリ: 2GB
-- ストレージ: SSD 55GB
-- CPU: 仮想コア×1
+- ストレージ: SSD 100GB
+- CPU: 仮想コア×3
 - OS: FreeBSD 13.1-RELEASE
 
 ## 監視サーバ
