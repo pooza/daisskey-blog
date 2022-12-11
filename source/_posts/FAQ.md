@@ -1,7 +1,7 @@
 ---
 title: よくある質問
-date: 2021-04-0
-categories: 新規さん向け
+date: 2022-04-11
+categories: 運用
 ---
 
 ## 名前の由来？
