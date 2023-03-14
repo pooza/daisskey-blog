@@ -4,7 +4,7 @@ date: 2023-03-14
 categories: 機能
 ---
 
-素のMastodonにはない、多くのナウプレ機能をサーバー側に内蔵しています。
+素のMisskeyにはない、多くのナウプレ機能をサーバー側に内蔵しています。
 積極的に曲紹介していきましょう。
 
 ## 曲名指定
@@ -36,7 +36,6 @@ categories: 機能
 
 - iTunes Store / Apple Music 楽曲/アルバムのURL
 - YouTube Music 楽曲URL
-- ~~Amazon Music 楽曲URL~~
 - Spotify 楽曲/アルバムのURL
 
 上記は概ね、同じ再生数で権利者に貢献できる額が多い順になっています。（2020年8月現在）
