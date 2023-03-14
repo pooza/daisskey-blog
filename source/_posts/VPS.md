@@ -1,6 +1,6 @@
 ---
 title: VPS
-date: 2022-08-16
+date: 2023-03-14
 categories: インフラ
 ---
 

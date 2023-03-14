@@ -1,6 +1,6 @@
 ---
 title: NowPlaying
-date: 2023-03-07
+date: 2023-03-14
 categories: 機能
 ---
 

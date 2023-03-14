@@ -1,11 +1,11 @@
 ---
 title: Slack互換webhook
-date: 2021-03-17
+date: 2023-03-14
 categories: 機能
 ---
 
 ボットや自動投稿を作る方の便宜の為、webhookを提供しています。
-仕様上は、[Slack Incoming Webhook](https://slack.com/intl/ja-jp/help/articles/115005265063-Slack-%E3%81%A7%E3%81%AE-Incoming-Webhook-%E3%81%AE%E5%88%A9%E7%94%A8)のサブセットです。簡単なSlackボットなら、既存のものを無改造でデルムリン丼対応にできるかもしれません。
+仕様上は、[Slack Incoming Webhook](https://slack.com/intl/ja-jp/help/articles/115005265063-Slack-%E3%81%A7%E3%81%AE-Incoming-Webhook-%E3%81%AE%E5%88%A9%E7%94%A8)のサブセットです。簡単なSlackボットなら、既存のものを無改造でダイスキー対応にできるかもしれません。
 
 ## 利用の手順
 
