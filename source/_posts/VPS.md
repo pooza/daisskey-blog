@@ -14,7 +14,7 @@ categories: インフラ
 
 ## 監視サーバ
 
-[監視系](/articles/監視)を収容。
+監視系を収容。
 
 - [Vultr](https://www.vultr.com/products/cloud-compute/)
 - メモリ: 1GB
