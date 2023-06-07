@@ -6,8 +6,8 @@ categories: 機能
 
 ## 機能概要
 
-- ダイスキーのアカウントと[Annict](https://annict.jp)のアカウントの紐づけを行えます。
-- [Annict](https://annict.jp)で、ダイ大や他のアニメの視聴記録を行うことができます。感想も書けますので、できるだけ書くとよいと思います。
+- ダイスキーのアカウントと[Annict](https://annict.com)のアカウントの紐づけを行えます。
+- [Annict](https://annict.com)で、ダイ大や他のアニメの視聴記録を行うことができます。感想も書けますので、できるだけ書くとよいと思います。
 - 1分以内に、視聴記録のまとめが投稿されます。
 - 本文中に「ネタバレ」文字列を含むと、CWで投稿されます。
 
@@ -15,7 +15,7 @@ categories: 機能
 
 ### Annictに登録
 
-- [Annict](https://annict.jp)のアカウントを持っていなければ、[登録](https://annict.jp/sign_up)を行う。
+- [Annict](https://annict.com)のアカウントを持っていなければ、[登録](https://annict.com/sign_up)を行う。
 
 ### モロヘイヤHOME
 
@@ -39,4 +39,4 @@ categories: 機能
 ## 技術的な詳細
 
 https://github.com/pooza/mulukhiya-toot-proxy/wiki/Annict%E5%AF%BE%E5%BF%9C
-https://annict.jp/userland/projects/60
+https://annict.com/userland/projects/60
