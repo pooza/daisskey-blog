@@ -1,6 +1,6 @@
 ---
 title: VPS
-date: 2023-03-14
+date: 2023-06-30
 categories: インフラ
 ---
 
@@ -20,4 +20,4 @@ categories: インフラ
 - メモリ: 1GB
 - ストレージ: SSD 25GB
 - CPU: 仮想コア×1
-- OS: FreeBSD 13.1-RELEASE
+- OS: FreeBSD 13.2-RELEASE
