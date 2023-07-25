@@ -18,11 +18,11 @@ categories: 機能
 
 ## Amazonの商品URLを短く
 
-- ~~Amazonの商品URLは、日本語を含んだ非常に長いものになりがちです。そのままでは扱いづらいですが、縮めることが可能です。~~ MFMと相性悪く、現在停止中。
+- ~~Amazonの商品URLは、日本語を含んだ非常に長いものになりがちです。そのままでは扱いづらいですが、縮めることが可能です。~~ __MFMと相性悪く、現在停止中。__
 - 詳細: [AmazonURLHandler](https://github.com/pooza/mulukhiya-toot-proxy/wiki/AmazonURLHandler)
 
 ## iTunes StoreのURLを短く
 
-- ~~iTunes StoreのURLも、同様に縮めることが可能です。~~ MFMと相性悪く、現在停止中。
+- ~~iTunes StoreのURLも、同様に縮めることが可能です。~~ __MFMと相性悪く、現在停止中。__
 - 詳細: [ItunesURLHandler](https://github.com/pooza/mulukhiya-toot-proxy/wiki/ItunesURLHandler)
 
