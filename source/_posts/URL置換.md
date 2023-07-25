@@ -1,6 +1,6 @@
 ---
 title: URL置換
-date: 2023-03-14
+date: 2023-07-25
 categories: 機能
 ---
 
@@ -18,11 +18,11 @@ categories: 機能
 
 ## Amazonの商品URLを短く
 
-- Amazonの商品URLは、日本語を含んだ非常に長いものになりがちです。そのままでは扱いづらいですが、縮めることが可能です。
+- ~~Amazonの商品URLは、日本語を含んだ非常に長いものになりがちです。そのままでは扱いづらいですが、縮めることが可能です。~~ MFMと相性悪く、現在停止中。
 - 詳細: [AmazonURLHandler](https://github.com/pooza/mulukhiya-toot-proxy/wiki/AmazonURLHandler)
 
 ## iTunes StoreのURLを短く
 
-- iTunes StoreのURLも、同様に縮めることが可能です。
+- ~~iTunes StoreのURLも、同様に縮めることが可能です。~~ MFMと相性悪く、現在停止中。
 - 詳細: [ItunesURLHandler](https://github.com/pooza/mulukhiya-toot-proxy/wiki/ItunesURLHandler)
 
