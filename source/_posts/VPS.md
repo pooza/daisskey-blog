@@ -4,7 +4,7 @@ date: 2023-07-25
 categories: インフラ
 ---
 
-## Misskeyサーバ
+## Misskeyサーバー
 
 - [さくらのVPS](https://vps.sakura.ad.jp/)
 - メモリ: 4GB

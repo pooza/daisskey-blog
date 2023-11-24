@@ -18,7 +18,7 @@ categories: 新規さん向け
 
 ## デルムリン丼
 
-姉妹サーバ「[デルムリン丼](https://mastodon.delmulin.com/)」も、ダイスキー同様、 `#delmulin` をデフォルトハッシュタグとするサーバーです。
+姉妹サーバー「[デルムリン丼](https://mastodon.delmulin.com/)」も、ダイスキー同様、 `#delmulin` をデフォルトハッシュタグとするサーバーです。
 ダイスキーは[デルムリン丼](https://mastodon.delmulin.com/)と一体となり、ひとつのサーバーであるかのような使い勝手を提供します。
 
 ## 使い方
