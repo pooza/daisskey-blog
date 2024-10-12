@@ -1,6 +1,6 @@
 ---
 title: VPS
-date: 2023-07-25
+date: 2024-10-13
 categories: インフラ
 ---
 
@@ -11,3 +11,4 @@ categories: インフラ
 - ストレージ: SSD 200GB
 - CPU: 仮想コア×4
 - OS: Ubuntu Server 22.04 LTS
+- IPv6対応
