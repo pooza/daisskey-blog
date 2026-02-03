@@ -1,46 +1,41 @@
 <!doctype html>
-<html lang="{{ site.lang | default: 'ja' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'ja' }}">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}" />
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   </head>
   <body>
-    <div class="bg-accent"></div>
-    <div class="site-shell">
-      <aside class="site-sidebar">
-        <div class="brand">
-          <div class="brand-mark"></div>
-          <div class="brand-text">
-            <span class="brand-title">{{ site.title }}</span>
-            <span class="brand-subtitle">Blog</span>
-          </div>
-        </div>
-        <nav class="side-nav">
-          <a class="pill" href="{{ "/" | relative_url }}">Home</a>
-          <a class="pill" href="{{ "/categories/" | relative_url }}">Categories</a>
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+        <nav class="site-nav">
+          <a href="{{ "/" | relative_url }}">ホーム</a>
+          <a href="{{ "/categories/" | relative_url }}">カテゴリ</a>
         </nav>
-        <div class="sidebar-foot">
-          <small>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</small>
+      </div>
+    </header>
+    <div class="wrap layout">
+      <aside class="sidebar">
+        <div class="panel">
+          <div class="panel-title">{{ site.title }}</div>
+          <div class="panel-text">Misskeyサーバ「ダイスキー」の説明ブログです。</div>
+        </div>
+        <div class="panel">
+          <a class="button" href="{{ "/categories/" | relative_url }}">カテゴリ一覧</a>
         </div>
       </aside>
-
-      <div class="site-content">
-        <header class="site-header">
-          <div class="site-header-inner">
-            <div class="header-title">
-              <span>{{ page.title | default: "Posts" }}</span>
-            </div>
-          </div>
-        </header>
-
-        <main class="site-main">
-          <div class="card">
-            {{ content }}
-          </div>
-        </main>
-      </div>
+      <main class="content">
+        <div class="panel content-panel">
+          {{ content }}
+        </div>
+      </main>
     </div>
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>{{ site.title }}</span>
+      </div>
+    </footer>
   </body>
 </html>
