@@ -1,10 +1,10 @@
-name: Build and Deploy Jekyll
+name: Deploy Jekyll to GitHub Pages
 
 on:
   push:
     branches:
-      - dev
       - main
+      - dev
   workflow_dispatch:
 
 permissions:
@@ -13,8 +13,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -23,19 +23,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      - name: Build Jekyll site
+      - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
+          source: .
           destination: ./_site
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site

@@ -3,9 +3,8 @@ description: ''
 author: ぷーざ
 lang: ja
 timezone: Asia/Tokyo
-#url: https://blog.delmulin.com
-url: https://pooza.github.io
-baseurl: "/daisskey-blog"
+url: https://blog.misskey.delmulin.com
+baseurl: ""
 
 permalink: /articles/:title/
 
