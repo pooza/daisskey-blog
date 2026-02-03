@@ -27,12 +27,12 @@ categories: カテゴリ名
 
 ### リンク（記事同士）
 ```
-[リンクテキスト]({{ "/articles/記事スラッグ/" | relative_url }})
+[リンクテキスト](/articles/記事スラッグ/)
 ```
 
 ### 画像
 ```
-![]({{ "/images/記事名/画像.png" | relative_url }})
+![](/images/記事名/画像.png)
 ```
 
 ## 普段行う操作

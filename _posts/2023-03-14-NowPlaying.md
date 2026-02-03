@@ -15,7 +15,7 @@ categories: 機能
 
 曲名だけの指定でも動作しますが、誤判定が多くなる様です。極力、アーティストを省略せずに指定してください。
 
-![]({{ "/images/NowPlaying/曲名指定.png" | relative_url }})
+![](/images/NowPlaying/曲名指定.png)
 
 ### 対応サービス
 
@@ -28,7 +28,7 @@ categories: 機能
 
 こんな感じの投稿を入力すると、該当曲に関する情報追記などが行われます。
 
-![]({{ "/images/NowPlaying/URL指定.png" | relative_url }})
+![](/images/NowPlaying/URL指定.png)
 
 ### 対応サービス
 
