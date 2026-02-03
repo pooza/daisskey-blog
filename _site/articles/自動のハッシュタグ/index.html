@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>自動のハッシュタグ | ダイスキーBlog</title>
+    <link rel="stylesheet" href="/assets/main.css" />
+  </head>
+  <body>
+    <div class="bg-accent"></div>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <div class="brand">
+          <div class="brand-mark"></div>
+          <div class="brand-text">
+            <span class="brand-title">ダイスキーBlog</span>
+            <span class="brand-subtitle">Blog</span>
+          </div>
+        </div>
+        <nav class="side-nav">
+          <a class="pill" href="/">Home</a>
+          <a class="pill" href="/categories/">Categories</a>
+        </nav>
+        <div class="sidebar-foot">
+          <small>&copy; 2026 ぷーざ</small>
+        </div>
+      </aside>
+
+      <div class="site-content">
+        <header class="site-header">
+          <div class="site-header-inner">
+            <div class="header-title">
+              <span>自動のハッシュタグ</span>
+            </div>
+          </div>
+        </header>
+
+        <main class="site-main">
+          <div class="card">
+            <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">自動のハッシュタグ</h1>
+    <p class="post-meta">2023-07-08</p>
+  </header>
+
+  <div class="post-content">
+    <p>ダイスキーでは、多くのハッシュタグが自動で挿入されます。
+このページに書かれているほとんどはMisskey本来の機能ではなく、 <strong>独自機能です</strong> 。</p>
+
+<h2 id="とにかくタグの挿入を止めたい">とにかくタグの挿入を止めたい！</h2>
+
+<ul>
+  <li>このページの説明は長いです。 <strong>手っ取り早くタグの挿入だけ止めたい方は、まず以下の手順だけおぼえてください。</strong></li>
+  <li>このページには、サーバーの設計思想に関わる大事な事柄が多く書かれています。落ち着いてからで構いませんのでこのページに戻ってきて、全ての説明に目を通して頂けると幸いです。（もちろん共感して頂ければなおよし）</li>
+</ul>
+
+<h3 id="タグが挿入されるのはパブリックの投稿だけ">タグが挿入されるのはパブリックの投稿だけ！</h3>
+
+<ul>
+  <li>公開範囲を<code class="language-plaintext highlighter-rouge">ホーム</code>以下に落とせば、タグは挿入されなくなります。</li>
+</ul>
+
+<p><img src="/images/%E8%87%AA%E5%8B%95%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%B0/form1.webp" alt="" />
+<img src="/images/%E8%87%AA%E5%8B%95%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%B0/form2.webp" alt="" /></p>
+
+<h3 id="デフォルトの公開範囲を変更">デフォルトの公開範囲を変更</h3>
+
+<ul>
+  <li>デフォルトの公開範囲を<code class="language-plaintext highlighter-rouge">ホーム</code>にして頂いても良いかもしれません。</li>
+  <li>さすがに<code class="language-plaintext highlighter-rouge">フォロワー</code>や<code class="language-plaintext highlighter-rouge">ダイレクト</code>をデフォルトにするのはやめて欲しいです。<code class="language-plaintext highlighter-rouge">ホーム</code>までにしてください。</li>
+</ul>
+
+<p><img src="/images/%E8%87%AA%E5%8B%95%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%B0/config.webp" alt="" /></p>
+
+<h3 id="ダイの大冒険タグを外せるだけでも十分な場合">「#ダイの大冒険」タグを外せるだけでも十分な場合</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">パブリック</code>の投稿であっても、<code class="language-plaintext highlighter-rouge">#即売会</code>タグが含まれていれば、<code class="language-plaintext highlighter-rouge">#ダイの大冒険</code>という（公式が頻繁に使用する）タグが削除されます。</li>
+</ul>
+
+<h2 id="どんなタグが自動で挿入されるのか">どんなタグが自動で挿入されるのか</h2>
+
+<ul>
+  <li>どのタグも、公開範囲が<code class="language-plaintext highlighter-rouge">ホーム</code>以下の投稿には挿入されません。</li>
+</ul>
+
+<h3 id="デフォルトハッシュタグ">デフォルトハッシュタグ</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">パブリック</code>の投稿に、<a href="/articles/delmulin">#delmulin</a>を挿入します。</li>
+  <li>デフォルトハッシュタグの目的・意義などについては、<a href="/articles/delmulin">別途ページ</a>を設けて説明しています。</li>
+</ul>
+
+<h3 id="メディアタイプ">メディアタイプ</h3>
+
+<ul>
+  <li>画像を含んだ投稿には<code class="language-plaintext highlighter-rouge">#image</code>を挿入します。</li>
+  <li>動画を含んだ投稿には<code class="language-plaintext highlighter-rouge">#video</code>を挿入します。</li>
+  <li>楽曲を含んだ投稿には<code class="language-plaintext highlighter-rouge">#audio</code>を挿入します。</li>
+</ul>
+
+<h3 id="キーワードの関連タグ">キーワードの関連タグ</h3>
+
+<ul>
+  <li>投稿本文中にあるダイ大関連の劇中キーワードに反応し、関連したタグを（場合によっては複数のタグを）挿入します。</li>
+  <li>文節区切り等は考慮していません。この為誤ったタグが挿入されることが割と多くあります。
+    <ul>
+      <li>気になる場合は<code class="language-plaintext highlighter-rouge">削除してタグづけ</code>を行ってください。（後述）</li>
+    </ul>
+  </li>
+  <li><strong>劇中キーワードをひとつでも含む投稿に対して、<code class="language-plaintext highlighter-rouge">#ダイの大冒険</code>タグが挿入されます。</strong></li>
+</ul>
+
+<h3 id="キャラクター関連タグ">キャラクター関連タグ</h3>
+
+<ul>
+  <li>投稿本文中にキャラクターや担当声優さんの名前が含まれる時、それぞれに該当するタグが挿入されます。
+    <ul>
+      <li>キャラクター名 → 新アニメの声優さんの名前</li>
+      <li>新アニメの声優さんの名前 → キャラクター名</li>
+      <li>旧アニメの声優さんの名前 → キャラクター名</li>
+      <li>新アニメの声優さんの姓 → 新アニメの声優さんの名前</li>
+      <li>旧アニメの声優さんの姓 → 旧アニメの声優さんの名前</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="実況用タグ">実況用タグ</h3>
+
+<ul>
+  <li><a href="/articles/実況">実況</a>中は、その番組やエピソードに関連するハッシュタグを追加します。</li>
+</ul>
+
+<h2 id="自動タグの目的">自動タグの目的</h2>
+
+<h3 id="デルムリン丼">デルムリン丼</h3>
+
+<ul>
+  <li>機能の目的を説明する為に、一旦、ダイスキーより早く生まれた姉妹サーバー<a href="https://mstdn.delmulin.com/">デルムリン丼</a>にまで遡ります。</li>
+  <li><a href="https://mstdn.delmulin.com/">デルムリン丼</a>はMastodonサーバーですが、Mastodonでは通常、 <strong>サーバー側が相当に贅沢な構成でなければ</strong> サーバー内の全文検索が使用できません。
+    <ul>
+      <li>これが「Mastodonは検索が弱い」とよく言われる（揶揄される）、まずひとつ目の理由になっています。</li>
+      <li>仮にそのサーバーの検索機能が有効であっても、検索対象は原則的にサーバーの中の投稿だけです。</li>
+      <li><a href="https://mstdn.delmulin.com/">デルムリン丼</a>で全文検索が使えるのは改造しているからで、贅沢な構成を採用している為ではありません。（その分機能は制限されていますし）</li>
+      <li><a href="https://mastodon.delmulin.com/">デルムリン丼</a>以外で全文検索が利用可能な外部のサーバーを利用している方は、改めて、管理人様に感謝しながら利用してください。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="mastodonの検索の弱さをふまえて">Mastodonの検索の弱さをふまえて</h3>
+
+<ul>
+  <li><a href="https://mstdn.delmulin.com/">デルムリン丼</a>の自動タグ機能は、Mastodonの検索機能を補うことに留まらず。</li>
+  <li>大げさに言えば、集合知の蓄積に役立てることも目指しています。企画当初から構想の中核に存在した <strong>サーバーのアイデンティティの様な機能</strong> です。</li>
+  <li>ダイスキーに同じ機能が実装されているのも、姉妹サーバーとして、同じ目的を踏襲しているからです。</li>
+</ul>
+
+<h3 id="パブリック投稿だけ">パブリック投稿だけ</h3>
+
+<ul>
+  <li>元々、ハッシュタグが本来持っている機能は<code class="language-plaintext highlighter-rouge">パブリック</code>でしか有効になりません。</li>
+  <li><code class="language-plaintext highlighter-rouge">ホーム</code>以下の投稿に対してタグ付けする意味は薄い（全く無意味というわけでもないのですが）為、該当しない投稿には手を触れない仕様にしました。</li>
+  <li>積極的に拡散したい投稿は（外部サーバーのユーザーの目にも入りやすい様に）タグづけされ、逆になるべく拡散したくない投稿はタグ付けしない。これが設計上の意図です。</li>
+</ul>
+
+<h2 id="利用の実際">利用の実際</h2>
+
+<p>冒頭の説明とも一部重複しますが。</p>
+
+<h3 id="即売会タグ">「#即売会」タグ</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">#即売会</code>タグが含まれていれば、<code class="language-plaintext highlighter-rouge">#ダイの大冒険</code>タグが削除されます。</li>
+  <li>サークル紹介などで<code class="language-plaintext highlighter-rouge">#即売会</code>タグを適切に含めて頂ければ、今後<code class="language-plaintext highlighter-rouge">#ダイの大冒険</code>タグを外すだけでなく、更に適切なタグ付けを行わせることが出来るかもしれません。</li>
+</ul>
+
+<h3 id="fanartタグ">「#fanart」タグ</h3>
+
+<ul>
+  <li>ご自分のイラストの投稿には、<code class="language-plaintext highlighter-rouge">#fanart</code>タグを加えることを推奨します。</li>
+  <li>煩わしい作業こそ、それを自動化するのはサーバーの役割でもあるのですが、こればかりは自動化できません。</li>
+</ul>
+
+<h3 id="二次創作系タグ">二次創作系タグ</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">#ダイの大冒険</code>のような公式が頻繁に使うタグは外す一方、公式が使わない用語（カップリング名、イベント名等）のタグは積極的に加え、同士の目に触れるチャンスを増やしてください。</li>
+  <li>この「必要なタグだけ残す」さじ加減の調整では、「削除してタグづけ」機能（以下画面）が有効です。</li>
+</ul>
+
+<p><img src="/images/%E8%87%AA%E5%8B%95%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%B0/delete_and_tagging.webp" alt="" /></p>
+
+<ul>
+  <li>「削除してタグづけ」をその端末で（正確にはそのブラウザーで）最初に使用する時、<a href="https://misskey.delmulin.com/mulukhiya/app/token">トークンの登録</a>という作業が必要です。（リンク先で指示に従ってください）
+    <ul>
+      <li>スマホアプリでMisskeyを利用したことがある方にはおなじみの作業かもしれません。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="勇者アバン-獄炎の魔王">「勇者アバン 獄炎の魔王」</h3>
+
+<ul>
+  <li>ところで、いまダイ大ファンの一番熱い話題は「獄炎」ですよね！</li>
+  <li>こちらについては、別途<a href="/articles/獄炎の魔王タグづけ">ガイドライン</a>を設けています。</li>
+</ul>
+
+<h2 id="謝辞">謝辞</h2>
+
+<ul>
+  <li>二次創作界隈の文化をよく知らない自分に、特に<a href="https://misskey.delmulin.com/@konchie">こんちえ</a>さんから色々なことを教わりました。</li>
+  <li>この記事自体が、デル丼時代からのメンバーの知識や知恵が少しずつ反映した、集合知と言って良いものです。</li>
+</ul>
+
+<p>皆さん、ありがとうございました。</p>
+
+<h2 id="技術的な詳細">技術的な詳細</h2>
+
+<p>https://github.com/pooza/mulukhiya-toot-proxy/wiki/TaggingHandler</p>
+
+  </div>
+</article>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

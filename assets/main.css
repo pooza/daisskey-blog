@@ -1,0 +1,230 @@
+:root {
+  --bg: #f6f6f0;
+  --panel: #ffffff;
+  --text: #232323;
+  --muted: #6f6f6f;
+  --accent: #77b300;
+  --accent-dark: #5c8f00;
+  --border: #e6e6de;
+  --shadow: 0 10px 24px rgba(30, 60, 0, 0.08);
+  --radius: 18px;
+  --sidebar: 240px;
+  --font: "M PLUS 1p", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--accent-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bg-accent {
+  position: fixed;
+  inset: -10% 40% 0 -10%;
+  background: linear-gradient(135deg, #7db200, #9acc00 40%, #b1d857 100%);
+  clip-path: polygon(0 0, 68% 0, 40% 100%, 0 100%);
+  z-index: -1;
+}
+
+.site-shell {
+  display: flex;
+  min-height: 100vh;
+  gap: 28px;
+  padding: 28px;
+}
+
+.site-sidebar {
+  width: var(--sidebar);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: radial-gradient(circle at 30% 30%, #ffe88a, #f7b500 60%, #e68a00);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.brand-subtitle {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #eef6d9;
+  color: #3a5c00;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 4px 10px rgba(60, 90, 0, 0.1);
+}
+
+.pill:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 14px rgba(60, 90, 0, 0.12);
+}
+
+.sidebar-foot {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: auto;
+}
+
+.site-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.site-header {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  box-shadow: var(--shadow);
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.site-main {
+  flex: 1;
+}
+
+.card {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  box-shadow: var(--shadow);
+}
+
+.post-title {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.post-meta {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: grid;
+  gap: 12px;
+}
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #f6f7f1;
+  border: 1px solid var(--border);
+}
+
+.post-item small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: grid;
+  gap: 18px;
+}
+
+.category-item {
+  padding: 12px 14px 6px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fbfbf7;
+}
+
+.category-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #3a3a3a;
+}
+
+@media (max-width: 900px) {
+  .site-shell {
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .site-sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .side-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .site-content {
+    width: 100%;
+  }
+}

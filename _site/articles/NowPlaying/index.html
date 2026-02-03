@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NowPlaying | ダイスキーBlog</title>
+    <link rel="stylesheet" href="/assets/main.css" />
+  </head>
+  <body>
+    <div class="bg-accent"></div>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <div class="brand">
+          <div class="brand-mark"></div>
+          <div class="brand-text">
+            <span class="brand-title">ダイスキーBlog</span>
+            <span class="brand-subtitle">Blog</span>
+          </div>
+        </div>
+        <nav class="side-nav">
+          <a class="pill" href="/">Home</a>
+          <a class="pill" href="/categories/">Categories</a>
+        </nav>
+        <div class="sidebar-foot">
+          <small>&copy; 2026 ぷーざ</small>
+        </div>
+      </aside>
+
+      <div class="site-content">
+        <header class="site-header">
+          <div class="site-header-inner">
+            <div class="header-title">
+              <span>NowPlaying</span>
+            </div>
+          </div>
+        </header>
+
+        <main class="site-main">
+          <div class="card">
+            <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">NowPlaying</h1>
+    <p class="post-meta">2023-03-14</p>
+  </header>
+
+  <div class="post-content">
+    <p>素のMisskeyにはない、多くのナウプレ機能をサーバー側に内蔵しています。
+積極的に曲紹介していきましょう。</p>
+
+<h2 id="曲名指定">曲名指定</h2>
+
+<p><code class="language-plaintext highlighter-rouge">#nowplaying #nowplaying 生きるをする マカロニえんぴつ</code></p>
+
+<p>こんな感じの投稿を入力すると、対応サービスから楽曲を検索し、該当曲に関する情報追記などが行われます。</p>
+
+<p>曲名だけの指定でも動作しますが、誤判定が多くなる様です。極力、アーティストを省略せずに指定してください。</p>
+
+<p><img src="/images/NowPlaying/%E6%9B%B2%E5%90%8D%E6%8C%87%E5%AE%9A.png" alt="" /></p>
+
+<h3 id="対応サービス">対応サービス</h3>
+
+<ul>
+  <li>iTunes Store / Apple Music</li>
+  <li>Spotify</li>
+</ul>
+
+<h2 id="url指定">URL指定</h2>
+
+<p><code class="language-plaintext highlighter-rouge">#nowplaying https://music.apple.com/jp/album/1530511845?i=1530511846&amp;uo=4</code></p>
+
+<p>こんな感じの投稿を入力すると、該当曲に関する情報追記などが行われます。</p>
+
+<p><img src="/images/NowPlaying/URL%E6%8C%87%E5%AE%9A.png" alt="" /></p>
+
+<h3 id="対応サービス-1">対応サービス</h3>
+
+<p>以下のURLに対応しています。</p>
+
+<ul>
+  <li>iTunes Store / Apple Music 楽曲/アルバムのURL</li>
+  <li>YouTube Music 楽曲URL</li>
+  <li>Spotify 楽曲/アルバムのURL</li>
+</ul>
+
+<p>上記は概ね、同じ再生数で権利者に貢献できる額が多い順になっています。（2020年8月現在）
+曲紹介はアーティストへの応援も込めているはず。同じ曲が複数のサービスに存在する場合は、上記の優先順位での曲紹介をご検討頂けると幸いです。</p>
+
+<h2 id="技術的な詳細">技術的な詳細</h2>
+<ul>
+  <li>https://github.com/pooza/mulukhiya-toot-proxy/wiki/AmazonURLNowplayingHandler</li>
+  <li>https://github.com/pooza/mulukhiya-toot-proxy/wiki/ItunesNowplayingHandler</li>
+  <li>https://github.com/pooza/mulukhiya-toot-proxy/wiki/ItunesURLNowplayingHandler</li>
+  <li>https://github.com/pooza/mulukhiya-toot-proxy/wiki/SpotifyNowplayingHandler</li>
+  <li>https://github.com/pooza/mulukhiya-toot-proxy/wiki/SpotifyURLNowplayingHandler</li>
+  <li>https://github.com/pooza/mulukhiya-toot-proxy/wiki/YouTubeURLNowplayingHandler</li>
+  <li>https://github.com/pooza/mulukhiya-toot-proxy/wiki/SongwhipNowplayingHandler</li>
+</ul>
+
+
+  </div>
+</article>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

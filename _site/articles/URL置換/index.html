@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>URL置換 | ダイスキーBlog</title>
+    <link rel="stylesheet" href="/assets/main.css" />
+  </head>
+  <body>
+    <div class="bg-accent"></div>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <div class="brand">
+          <div class="brand-mark"></div>
+          <div class="brand-text">
+            <span class="brand-title">ダイスキーBlog</span>
+            <span class="brand-subtitle">Blog</span>
+          </div>
+        </div>
+        <nav class="side-nav">
+          <a class="pill" href="/">Home</a>
+          <a class="pill" href="/categories/">Categories</a>
+        </nav>
+        <div class="sidebar-foot">
+          <small>&copy; 2026 ぷーざ</small>
+        </div>
+      </aside>
+
+      <div class="site-content">
+        <header class="site-header">
+          <div class="site-header-inner">
+            <div class="header-title">
+              <span>URL置換</span>
+            </div>
+          </div>
+        </header>
+
+        <main class="site-main">
+          <div class="card">
+            <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">URL置換</h1>
+    <p class="post-meta">2023-07-25</p>
+  </header>
+
+  <div class="post-content">
+    <p>投稿本文に書かれたURLについて、以下の置換を行います。</p>
+
+<h2 id="短縮urlを元に戻す">短縮URLを元に戻す</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">t.co</code>等、短縮URLには本来のURLを隠す性質があります。用心深いメンバーはそのURLをリスクあるものと警戒し、開くこと躊躇するでしょう。短縮URLを、短縮前の本来のものに戻します。</li>
+  <li>詳細: <a href="https://github.com/pooza/mulukhiya-toot-proxy/wiki/ShortenedURLHandler">ShortenedURLHandler</a></li>
+</ul>
+
+<h2 id="日本語を含んだurlを正しいものに置換">日本語を含んだURLを正しいものに置換</h2>
+
+<ul>
+  <li>日本語を含んだURLは、クライアントによっては、クリック/タップしても開くことができない場合があります。同じ意味の日本語を含まない形式に置換すれば、どのクライアントでも開くことができる様になります。</li>
+  <li>詳細: <a href="https://github.com/pooza/mulukhiya-toot-proxy/wiki/URLNormalizeHandler">URLNormalizeHandler</a></li>
+</ul>
+
+<h2 id="amazonの商品urlを短く">Amazonの商品URLを短く</h2>
+
+<ul>
+  <li><del>Amazonの商品URLは、日本語を含んだ非常に長いものになりがちです。そのままでは扱いづらいですが、縮めることが可能です。</del> <strong>MFMと相性悪く、現在停止中。</strong></li>
+  <li>詳細: <a href="https://github.com/pooza/mulukhiya-toot-proxy/wiki/AmazonURLHandler">AmazonURLHandler</a></li>
+</ul>
+
+<h2 id="itunes-storeのurlを短く">iTunes StoreのURLを短く</h2>
+
+<ul>
+  <li><del>iTunes StoreのURLも、同様に縮めることが可能です。</del> <strong>MFMと相性悪く、現在停止中。</strong></li>
+  <li>詳細: <a href="https://github.com/pooza/mulukhiya-toot-proxy/wiki/ItunesURLHandler">ItunesURLHandler</a></li>
+</ul>
+
+
+  </div>
+</article>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

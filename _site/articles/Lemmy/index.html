@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lemmy対応 | ダイスキーBlog</title>
+    <link rel="stylesheet" href="/assets/main.css" />
+  </head>
+  <body>
+    <div class="bg-accent"></div>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <div class="brand">
+          <div class="brand-mark"></div>
+          <div class="brand-text">
+            <span class="brand-title">ダイスキーBlog</span>
+            <span class="brand-subtitle">Blog</span>
+          </div>
+        </div>
+        <nav class="side-nav">
+          <a class="pill" href="/">Home</a>
+          <a class="pill" href="/categories/">Categories</a>
+        </nav>
+        <div class="sidebar-foot">
+          <small>&copy; 2026 ぷーざ</small>
+        </div>
+      </aside>
+
+      <div class="site-content">
+        <header class="site-header">
+          <div class="site-header-inner">
+            <div class="header-title">
+              <span>Lemmy対応</span>
+            </div>
+          </div>
+        </header>
+
+        <main class="site-main">
+          <div class="card">
+            <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Lemmy対応</h1>
+    <p class="post-meta">2023-03-14</p>
+  </header>
+
+  <div class="post-content">
+    <p>オープンソースのリンクアグリゲータ、<a href="https://join.lemmy.ml/">Lemmy</a>に対応しています。</p>
+
+<h2 id="リンクアグリゲータとは">リンクアグリゲータとは？</h2>
+
+<p>国内の同種のサービスとしては、<a href="https://b.hatena.ne.jp/">はてなブックマーク</a>（縮めて「はてブ」とも）が有名と思います。
+リンクアグリゲータを使って、気になったサイトやページをブックマークできます。保管したブックマークは、個人的に溜め込むもよし、積極的に公開するもよし。
+リンクアグリゲータとは、そんな、ネットワーク対応のブックマークサービスです。</p>
+
+<h2 id="どんなことが出来る">どんなことが出来る？</h2>
+
+<p>Lemmyは、Misskeyのようなコミュニティ指向が、はてブ以上に強いリンクアグリゲータです。
+Lemmyとダイスキーを連携させれば、それ以後、「お気に入り」の写しをMisskeyだけでなくLemmyにも残せる様になります。</p>
+
+<p>私は、ダイスキー/<a href="https://mastodon.delmulin.com/">デルムリン丼</a>以外に2つのサーバーを管理しています。
+その全てがLemmyと紐づけられており、「お気に入り」（Mastodonでは「ブックマーク」）操作を行うとLemmyに集約されるようになっています。</p>
+
+<h2 id="lemmyサーバーを選ぶ">Lemmyサーバーを選ぶ</h2>
+
+<p>国内のLemmyサーバーは多くないようです。</p>
+
+<ul>
+  <li><a href="https://lm.korako.me/">鴉は拠り所について語り合う</a></li>
+</ul>
+
+<p>ダイスキーでは、<a href="https://lm.korako.me/">鴉は拠り所について語り合う</a>の利用をお勧めしています。これ以降の説明も、このサーバーを利用するものとして進めます。
+まずは、<a href="https://lm.korako.me/">鴉は拠り所について語り合う</a>で<a href="https://lm.korako.me/login">アカウントを登録</a>してください。（以下）</p>
+
+<p><img src="/images/Lemmy/account.png" alt="" /></p>
+
+<h2 id="個人用コミュニティ">個人用コミュニティ</h2>
+
+<p>ブックマークの保存先となる、個人用の<a href="https://lm.korako.me/create_community">コミュニティを作成</a>してください。
+ダイスキーで「お気に入り」操作を行うと、このLemmyコミュニティにもブックマークが溜まっていきます。</p>
+
+<p><img src="/images/Lemmy/community.png" alt="" /></p>
+
+<p>個人用コミュニティとは、何だか矛盾した響きですが。</p>
+
+<p>また、 <strong>コミュニティの「名前」を「ユーザー名」と同じものにしない様に</strong> 注意してください。Misskeyとの連携機能が全て誤動作します。
+例えば、<code class="language-plaintext highlighter-rouge">pooza</code>というユーザーの個人用コミュニティとして<code class="language-plaintext highlighter-rouge">pooza</code>という名前のコミュニティを作ることは避け、<code class="language-plaintext highlighter-rouge">pooza1</code>などの別の名前で登録する様にしてください。</p>
+
+<h2 id="ダイスキーからlemmyに接続">ダイスキーからLemmyに接続</h2>
+
+<p><a href="https://misskey.delmulin.com/mulukhiya">モロヘイヤHOME</a>を初めて利用する方は、最初に<a href="https://misskey.delmulin.com/mulukhiya/app/token">トークンの登録</a>を行ってください。
+もし済んでいたら、<a href="https://misskey.delmulin.com/mulukhiya/app/config">環境設定</a>仮面から設定を行います。</p>
+
+<p><img src="/images/Lemmy/mulukhiya1.png" alt="" /></p>
+
+<p>設定する項目は以下の3つ。</p>
+
+<ul>
+  <li><strong>URL</strong> ： <a href="https://lm.korako.me/">鴉は拠り所について語り合う</a>のURL、<code class="language-plaintext highlighter-rouge">https://lm.korako.me</code> を指定。</li>
+  <li><strong>ユーザーID</strong> ：アカウント登録に使用したユーザーID、またはメールアドレス。</li>
+  <li><strong>パスワード</strong> ：同、パスワード。</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">更新</code>ボタンを押下。入力に誤りがなければ、保存先コミュニティが選択できるようになります。
+<strong>コミュニティ選択まで行わなければ設定は完了しません</strong> ので、ご注意下さい。</p>
+
+<p><img src="/images/Lemmy/mulukhiya2.png" alt="" /></p>
+
+<p>コミュニティを選択して、もう一度<code class="language-plaintext highlighter-rouge">更新</code>ボタンを押下。
+ここまでの設定で、ダイスキーで保存した「お気に入り」がLemmyにも残せるようになります。</p>
+
+  </div>
+</article>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
